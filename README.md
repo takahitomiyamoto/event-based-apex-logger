@@ -44,7 +44,7 @@ sfdx force:org:open -u demo -p lightning/o/EAL_Logger__c/list -u [targetusername
 #### Sample Code
 
 ```java
-public without sharing class Demo {
+public with sharing class Demo {
   private final EAL_Logger logger = EAL_Logger.getInstance();
 
   private void setMethodName(String methodName) {
