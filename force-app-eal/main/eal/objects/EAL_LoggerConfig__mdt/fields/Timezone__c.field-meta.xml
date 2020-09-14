@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timezone__c</fullName>
+    <description>Timezone on the logger</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Timezone on the logger</inlineHelpText>
+    <label>Timezone</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Australia/Sydney</fullName>
+                <default>false</default>
+                <label>Australia/Sydney</label>
+            </value>
+            <value>
+                <fullName>Asia/Tokyo</fullName>
+                <default>true</default>
+                <label>Asia/Tokyo</label>
+            </value>
+            <value>
+                <fullName>Asia/Shanghai</fullName>
+                <default>false</default>
+                <label>Asia/Shanghai</label>
+            </value>
+            <value>
+                <fullName>Asia/Kolkata</fullName>
+                <default>false</default>
+                <label>Asia/Kolkata</label>
+            </value>
+            <value>
+                <fullName>America/Los_Angeles</fullName>
+                <default>false</default>
+                <label>America/Los_Angeles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

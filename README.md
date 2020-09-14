@@ -29,6 +29,44 @@ sfdx force:org:open -p lightning/setup/ImportedPackage/home -u [targetusername]
 sfdx force:user:permset:assign -n EAL_Logger_User -u [targetusername]
 ```
 
+### 3. configure the custom metadata type : `EAL_LoggerConfig`
+
+```sh
+sfdx force:org:open -p lightning/setup/CustomMetadata/home -u [targetusername]
+```
+
+### 4. execute any apex code and see the custom tab : `EAL_Loggers`
+
+```sh
+sfdx force:org:open -u demo -p lightning/o/EAL_Logger__c/list -u [targetusername]
+```
+
+#### Sample Code
+
+```java
+public without sharing class Demo {
+  private final EAL_Logger logger = EAL_Logger.getInstance();
+
+  private void setMethodName(String methodName) {
+    logger.setClassName(Demo.class.getName());
+    logger.setMethodName(methodName);
+  }
+
+  public void demo() {
+    logger.setMethodName('demo');
+    try {
+      Account account = new Account();
+      insert account;
+    } catch (Exception e) {
+      logger.store(LoggingLevel.ERROR, EAL_CommonError.createErrorMessage(e));
+    } finally {
+      logger.publish();
+      logger.clear();
+    }
+  }
+}
+```
+
 ## Acknowledgment
 
 - [Advanced Logging with Platform Events](https://github.com/afawcett/eventlogging)
