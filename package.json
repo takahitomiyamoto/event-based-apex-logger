@@ -1,0 +1,35 @@
+{
+  "name": "event-based-apex-logger",
+  "version": "1.0.0.0",
+  "description": "This is a framework that automates our Apex logging powered by Platform Event.",
+  "license": "MIT",
+  "scripts": {
+    "gulp:init": "gulp init",
+    "gulp:logger:query": "gulp queryLogger",
+    "gulp:manifest:create": "gulp manifestCreate",
+    "pmd:apex:summaryhtml": "sfdx sfpowerkit:source:pmd --format summaryhtml --report .reports/pmd.summary.html --ruleset pmd-ruleset.xml",
+    "prettier": "prettier \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\" --write --loglevel log",
+    "lint:app:html": "eslint force-app --format html --output-file .reports/eslint.html",
+    "test:unit": "sfdx-lwc-jest",
+    "test:unit:watch": "sfdx-lwc-jest --watch",
+    "test:unit:debug": "sfdx-lwc-jest --debug",
+    "test:unit:coverage": "sfdx-lwc-jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "@babel/register": "7.11.5",
+    "@prettier/plugin-xml": "0.12.0",
+    "@salesforce/eslint-config-lwc": "0.7.0",
+    "@salesforce/eslint-plugin-aura": "1.4.0",
+    "eslint": "7.9.0",
+    "gulp": "4.0.2",
+    "gulp-babel": "8.0.0",
+    "gulp-shell": "0.8.0",
+    "heat-sfdx-common": "0.1.14",
+    "heat-sfdx-metadata": "0.0.12",
+    "prettier": "2.1.1",
+    "prettier-plugin-apex": "1.7.0"
+  }
+}

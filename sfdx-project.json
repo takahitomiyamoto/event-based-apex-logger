@@ -1,0 +1,25 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    },
+    {
+      "path": "force-app-eal",
+      "default": false,
+      "package": "event-based-apex-logger",
+      "versionName": "Summer '20",
+      "versionDescription": "Summer '20 (API version 49.0)",
+      "versionNumber": "1.0.0.0",
+      "definitionFile": "config/project-scratch-def.json",
+      "releaseNotesUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger/releases",
+      "postInstallUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger"
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "49.0",
+  "packageAliases": {
+    "event-based-apex-logger": "0HoXXXXXXXXXXXXXXX"
+  }
+}
