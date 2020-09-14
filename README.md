@@ -35,6 +35,8 @@ sfdx force:user:permset:assign -n EAL_Logger_User -u [targetusername]
 sfdx force:org:open -p lightning/setup/CustomMetadata/home -u [targetusername]
 ```
 
+![logger-config](https://raw.githubusercontent.com/takahitomiyamoto/event-based-apex-logger/master/public/images/logger-config.png)
+
 ### 4. execute any apex code and see the custom tab : `EAL_Loggers`
 
 ```sh
@@ -53,7 +55,7 @@ public with sharing class Demo {
   }
 
   public void demo() {
-    logger.setMethodName('demo');
+    this.setMethodName('demo');
     try {
       Account account = new Account();
       insert account;
@@ -66,6 +68,8 @@ public with sharing class Demo {
   }
 }
 ```
+
+![sample-code](https://raw.githubusercontent.com/takahitomiyamoto/event-based-apex-logger/master/public/images/sample-code.png)
 
 ## Acknowledgment
 

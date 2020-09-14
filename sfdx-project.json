@@ -20,6 +20,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "49.0",
   "packageAliases": {
-    "event-based-apex-logger": "0HoXXXXXXXXXXXXXXX"
+    "event-based-apex-logger": "0Ho2x0000004CblCAE",
+    "event-based-apex-logger@1.0.0.0": "04t2x000003vCy2AAE"
   }
 }
