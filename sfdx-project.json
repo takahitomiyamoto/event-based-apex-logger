@@ -8,9 +8,9 @@
       "path": "force-app-eal",
       "default": false,
       "package": "event-based-apex-logger",
-      "versionName": "Summer '20",
-      "versionDescription": "Summer '20 (API version 49.0)",
-      "versionNumber": "1.0.0.0",
+      "versionName": "Winter '21",
+      "versionDescription": "Winter '21 (API version 50.0)",
+      "versionNumber": "1.0.1.0",
       "definitionFile": "config/project-scratch-def.json",
       "releaseNotesUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger/releases",
       "postInstallUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger"
@@ -18,9 +18,10 @@
   ],
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "49.0",
+  "sourceApiVersion": "50.0",
   "packageAliases": {
     "event-based-apex-logger": "0Ho2x0000004CblCAE",
-    "event-based-apex-logger@1.0.0.0": "04t2x000003vCy2AAE"
+    "event-based-apex-logger@1.0.0.0": "04t2x000003vCy2AAE",
+    "event-based-apex-logger@1.0.1.0": "04t2x000003vQnOAAU"
   }
 }

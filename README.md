@@ -18,7 +18,7 @@ This is a framework that automates our Apex logging powered by Platform Event.
 ### 1. install the framework on your org
 
 ```sh
-sfdx force:package:install -p event-based-apex-logger@1.0.0.0 -s AllUsers -u [targetusername]
+sfdx force:package:install -p event-based-apex-logger@1.0.1.0 -s AllUsers -u [targetusername]
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u [targetusername]
 sfdx force:org:open -p lightning/setup/ImportedPackage/home -u [targetusername]
 ```
@@ -133,7 +133,7 @@ sfdx force:package:version:list -p event-based-apex-logger -v DevHub-EAL --verbo
 ### 1. create a package version
 
 ```sh
-sfdx force:package:version:create -a "Summer '20" -b "master" -c -e "Summer '20 (API version 49.0)" -f config/project-scratch-def.json -n 1.0.1.0 -p 0HoXXXXXXXXXXXXXXX -t v49.0 -v DevHub-EAL -x --postinstallurl "https://github.com/takahitomiyamoto/event-based-apex-logger" --releasenotesurl "https://github.com/takahitomiyamoto/event-based-apex-logger/releases"
+sfdx force:package:version:create -a "Winter '21" -b "master" -c -e "Winter '21 (API version 50.0)" -f config/project-scratch-def.json -n 1.0.1.0 -p 0HoXXXXXXXXXXXXXXX -t v50.0 -v DevHub-EAL -x --postinstallurl "https://github.com/takahitomiyamoto/event-based-apex-logger" --releasenotesurl "https://github.com/takahitomiyamoto/event-based-apex-logger/releases"
 ```
 
 ### 2. retrieve details about a package version creation request
@@ -145,7 +145,7 @@ sfdx force:package:version:create:report -i 08cXXXXXXXXXXXXXXX -v DevHub-EAL
 ### 3. update a package version
 
 ```sh
-sfdx force:package:version:update -a "Summer '20" -b "master" -e "Summer '20 (API version 49.0)" -p 04tXXXXXXXXXXXXXXX -t v49.0 -v DevHub-EAL
+sfdx force:package:version:update -a "Winter '21" -b "master" -e "Winter '21 (API version 50.0)" -p 04tXXXXXXXXXXXXXXX -t v50.0 -v DevHub-EAL
 ```
 
 ### 4. promote a package version to released

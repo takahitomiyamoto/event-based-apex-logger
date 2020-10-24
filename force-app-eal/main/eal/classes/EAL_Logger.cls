@@ -37,7 +37,10 @@ public without sharing class EAL_Logger {
       return;
     }
     if (helper.isHigherLevel(level, defaultLevel)) {
-      String logMessage = helper.createLogMessage(this.getMethodName(), message);
+      String logMessage = helper.createLogMessage(
+        this.getMethodName(),
+        message
+      );
       String debugLog = helper.createDebugLog(
         level,
         this.getClassName(),
