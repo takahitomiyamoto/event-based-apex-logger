@@ -72,4 +72,32 @@ private class EAL_CommonErrorTest {
       System.assertEquals(true, b, 'createErrorMessageCustomException');
     }
   }
+
+  @isTest
+  static void createErrorMessageDatabaseError() {
+    Test.startTest();
+    Account a = new Account();
+    String msg = 'New error method in SObject';
+    a.addError('Name', msg);
+    List<Database.Error> errors = a.getErrors();
+    Database.Error error = errors.get(0);
+    String message = EAL_CommonError.createErrorMessage(error);
+    Test.stopTest();
+
+    System.assertEquals(1, errors.size(), 'createErrorMessageDatabaseError');
+    System.assertNotEquals('', message, 'createErrorMessageDatabaseError');
+  }
+
+  @isTest
+  static void handleErrors() {
+    Test.startTest();
+    List<Account> accounts = new List<Account>();
+    accounts.add(new Account());
+    accounts.add(new Account());
+    List<Database.SaveResult> results = Database.insert(accounts, false);
+    EAL_CommonError.handleErrors(results);
+    Test.stopTest();
+
+    System.assertEquals(2, results.size(), 'handleErrors');
+  }
 }

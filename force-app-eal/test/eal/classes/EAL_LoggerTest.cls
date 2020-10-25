@@ -73,4 +73,27 @@ private class EAL_LoggerTest {
 
     System.assertEquals('demo', logger.getMethodName(), 'setMethodName');
   }
+
+  @isTest
+  static void storeDefaultDebugLogError() {
+    Test.startTest();
+    logger.storeDefaultDebugLog(LoggingLevel.DEBUG, LoggingLevel.ERROR, '');
+    Test.stopTest();
+
+    System.assertEquals(
+      true,
+      logger.usePlatformEvent,
+      'storeDefaultDebugLogError'
+    );
+  }
+
+  @isTest
+  static void publishError() {
+    Test.startTest();
+    logger.store(LoggingLevel.ERROR, '');
+    logger.publish();
+    Test.stopTest();
+
+    System.assertNotEquals(null, logger, 'publishError');
+  }
 }

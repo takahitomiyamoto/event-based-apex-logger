@@ -13,12 +13,22 @@
 
 This is a framework that automates our Apex logging powered by Platform Event.
 
+Apex debug logs will be inserted to a custom object, such as `EAL_Logger__c`.
+Use Platform Events only if the debug log contains the `ERROR` LoggingLevel.
+
+## Remarks
+
+Platform Event has some allocations, especially "Event Publishing: maximum number of event notifications published per hour" is one of the most inescapable allocations.
+So we need to reduce its frequency as much as possible.
+
+> [Platform Event Allocations](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_event_limits.htm)
+
 ## How to use
 
 ### 1. install the framework on your org
 
 ```sh
-sfdx force:package:install -p event-based-apex-logger@1.0.1.0 -s AllUsers -u [targetusername]
+sfdx force:package:install -p event-based-apex-logger@1.0.3.0 -s AllUsers -u [targetusername]
 sfdx force:package:install:report -i 0HfXXXXXXXXXXXXXXX -u [targetusername]
 sfdx force:org:open -p lightning/setup/ImportedPackage/home -u [targetusername]
 ```
@@ -133,7 +143,7 @@ sfdx force:package:version:list -p event-based-apex-logger -v DevHub-EAL --verbo
 ### 1. create a package version
 
 ```sh
-sfdx force:package:version:create -a "Winter '21" -b "master" -c -e "Winter '21 (API version 50.0)" -f config/project-scratch-def.json -n 1.0.1.0 -p 0HoXXXXXXXXXXXXXXX -t v50.0 -v DevHub-EAL -x --postinstallurl "https://github.com/takahitomiyamoto/event-based-apex-logger" --releasenotesurl "https://github.com/takahitomiyamoto/event-based-apex-logger/releases"
+sfdx force:package:version:create -a "Winter '21" -b "master" -c -e "Winter '21 (API version 50.0)" -f config/project-scratch-def.json -n 1.0.3.0 -p 0HoXXXXXXXXXXXXXXX -t v50.0 -v DevHub-EAL -x --postinstallurl "https://github.com/takahitomiyamoto/event-based-apex-logger" --releasenotesurl "https://github.com/takahitomiyamoto/event-based-apex-logger/releases"
 ```
 
 ### 2. retrieve details about a package version creation request

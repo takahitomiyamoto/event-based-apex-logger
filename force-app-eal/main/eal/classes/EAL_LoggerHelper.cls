@@ -284,7 +284,7 @@ public without sharing class EAL_LoggerHelper {
   }
 
   /**
-   * @description create EAL_LoggerEvent__e
+   * @description create EAL_LoggerEvent__e. <br> Make sure that the length of EAL_LoggerEvent__e.Logger__c is greater than the sum of the size of EAL_Logger.cls and the length of Log Message Field on Custom Logger Object.
    * @param logger
    * @return events
    */
