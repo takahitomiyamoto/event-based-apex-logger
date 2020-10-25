@@ -14,6 +14,9 @@ public without sharing class EAL_Logger {
   private String methodName;
   private List<String> debugLogs = new List<String>();
 
+  @TestVisible
+  private Boolean usePlatformEvent = false;
+
   /**
    * @description private constructor with no parameter
    */
@@ -36,6 +39,12 @@ public without sharing class EAL_Logger {
     if (helper.notLogging(defaultLevel)) {
       return;
     }
+
+    // use Platform Event if LoggingLevel is ERROR
+    if (LoggingLevel.ERROR == level) {
+      this.usePlatformEvent = true;
+    }
+
     if (helper.isHigherLevel(level, defaultLevel)) {
       String logMessage = helper.createLogMessage(
         this.getMethodName(),
@@ -120,8 +129,13 @@ public without sharing class EAL_Logger {
    */
   public void publish() {
     List<EAL_LoggerEvent__e> events = helper.createLoggerEvent(this);
-    List<Database.SaveResult> results = EventBus.publish(events);
-    EAL_CommonError.handleErrors(results);
+
+    if (this.usePlatformEvent) {
+      List<Database.SaveResult> results = EventBus.publish(events);
+      EAL_CommonError.handleErrors(results);
+    } else {
+      this.fetch();
+    }
   }
 
   /**

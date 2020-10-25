@@ -1,6 +1,6 @@
 {
   "name": "event-based-apex-logger",
-  "version": "1.0.1.0",
+  "version": "1.0.3.0",
   "description": "This is a framework that automates our Apex logging powered by Platform Event.",
   "license": "MIT",
   "scripts": {

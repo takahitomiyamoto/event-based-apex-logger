@@ -10,7 +10,7 @@
       "package": "event-based-apex-logger",
       "versionName": "Winter '21",
       "versionDescription": "Winter '21 (API version 50.0)",
-      "versionNumber": "1.0.1.0",
+      "versionNumber": "1.0.3.0",
       "definitionFile": "config/project-scratch-def.json",
       "releaseNotesUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger/releases",
       "postInstallUrl": "https://github.com/takahitomiyamoto/event-based-apex-logger"
@@ -22,6 +22,8 @@
   "packageAliases": {
     "event-based-apex-logger": "0Ho2x0000004CblCAE",
     "event-based-apex-logger@1.0.0.0": "04t2x000003vCy2AAE",
-    "event-based-apex-logger@1.0.1.0": "04t2x000003vQnOAAU"
+    "event-based-apex-logger@1.0.1.0": "04t2x000003vQnOAAU",
+    "event-based-apex-logger@1.0.2.0": "04t2x000003vQnYAAU",
+    "event-based-apex-logger@1.0.3.0": "04t2x000003vQndAAE"
   }
 }

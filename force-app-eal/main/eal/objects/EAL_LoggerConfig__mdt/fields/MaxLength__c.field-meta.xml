@@ -5,7 +5,7 @@
     <externalId>false</externalId>
     <fieldManageability>SubscriberControlled</fieldManageability>
     <inlineHelpText
-  >within the limit of Log Message Field on Custom Logger Object</inlineHelpText>
+  >Do not exceed the length of Log Message Field on Custom Logger Object</inlineHelpText>
     <label>Max Length</label>
     <precision>6</precision>
     <required>false</required>

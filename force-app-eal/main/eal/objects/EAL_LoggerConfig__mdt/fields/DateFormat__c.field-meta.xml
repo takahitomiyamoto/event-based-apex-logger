@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DateFormat__c</fullName>
+    <description>DateFormat of the timestamp on the logger</description>
     <externalId>false</externalId>
     <fieldManageability>SubscriberControlled</fieldManageability>
-    <description>DateFormat of the timestamp on the logger</description>
     <inlineHelpText>DateFormat of the timestamp on the logger</inlineHelpText>
     <label>Date Format</label>
     <required>false</required>
@@ -13,9 +13,9 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>yyyy-MM-dd'T'HH:mm:ss.SSS z</fullName>
+                <fullName>yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS z</fullName>
                 <default>true</default>
-                <label>yyyy-MM-dd'T'HH:mm:ss.SSS z</label>
+                <label>yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSS z</label>
             </value>
         </valueSetDefinition>
     </valueSet>
