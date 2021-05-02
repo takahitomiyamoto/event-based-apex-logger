@@ -64,7 +64,7 @@ public with sharing class Demo {
     logger.setMethodName(methodName);
   }
 
-  public void demo() {
+  public void runDemo() {
     this.setMethodName('demo');
     try {
       Account account = new Account();

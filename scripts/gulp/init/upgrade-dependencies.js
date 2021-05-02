@@ -14,10 +14,14 @@ export default function _upgradeDependencies() {
   commands.push('@babel/core');
   commands.push('@babel/preset-env');
   commands.push('@babel/register');
+  commands.push('@lwc/eslint-plugin-lwc');
   commands.push('@prettier/plugin-xml');
   commands.push('@salesforce/eslint-config-lwc');
   commands.push('@salesforce/eslint-plugin-aura');
+  commands.push('babel-eslint');
   commands.push('eslint');
+  commands.push('eslint-plugin-import');
+  commands.push('eslint-plugin-jest');
   commands.push('gulp');
   commands.push('gulp-babel');
   commands.push('gulp-shell');
