@@ -30,6 +30,7 @@
     "@prettier/plugin-xml": "0.13.1",
     "@salesforce/eslint-config-lwc": "1.0.0",
     "@salesforce/eslint-plugin-aura": "2.0.0",
+    "@salesforce/sfdx-lwc-jest": "0.10.4",
     "babel-eslint": "10.1.0",
     "eslint": "7.25.0",
     "eslint-plugin-import": "2.22.1",

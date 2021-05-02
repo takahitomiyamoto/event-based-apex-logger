@@ -18,6 +18,7 @@ export default function _upgradeDependencies() {
   commands.push('@prettier/plugin-xml');
   commands.push('@salesforce/eslint-config-lwc');
   commands.push('@salesforce/eslint-plugin-aura');
+  commands.push('@salesforce/sfdx-lwc-jest');
   commands.push('babel-eslint');
   commands.push('eslint');
   commands.push('eslint-plugin-import');
