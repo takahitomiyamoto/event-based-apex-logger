@@ -43,7 +43,7 @@ jobs:
           tar xJf sfdx-linux-x64.tar.xz -C ~/sfdx --strip-components 1
           echo "$HOME/sfdx/bin" >> $GITHUB_PATH
           ~/sfdx/bin/sfdx version
-          ~/sfdx/bin/sfdx plugins:install sfpowerkit
+          echo y | ~/sfdx/bin/sfdx plugins:install sfpowerkit
 
       # PMD
       - name: 'PMD'
