@@ -12,7 +12,7 @@ on:
 
 # Jobs to be executed
 jobs:
-  format-lint-lwc-tests:
+  validate:
     runs-on: ubuntu-latest
     steps:
       # Checkout the source code
@@ -38,7 +38,7 @@ jobs:
       # Install Salesforce CLI
       - name: 'Install Salesforce CLI'
         run: |
-          yarn gloval add sfdx-cli
+          yarn global add sfdx-cli
           sfdx plugins:install sfpowerkit
 
       # PMD
