@@ -1,7 +1,7 @@
 [![dependencies status](https://david-dm.org/takahitomiyamoto/event-based-apex-logger.svg)](https://david-dm.org/takahitomiyamoto/event-based-apex-logger)
 [![devDependency status](https://david-dm.org/takahitomiyamoto/event-based-apex-logger/dev-status.svg)](https://david-dm.org/takahitomiyamoto/event-based-apex-logger#info=devDependencies)
 [![Code Climate](https://codeclimate.com/github/takahitomiyamoto/event-based-apex-logger.svg)](https://codeclimate.com/github/takahitomiyamoto/event-based-apex-logger)
-[![codecov](https://codecov.io/gh/takahitomiyamoto/event-based-apex-logger/branch/master/graph/badge.svg?token=RTY6ASCCT1)](https://codecov.io/gh/takahitomiyamoto/event-based-apex-logger)
+[![codecov](secret:5RoyjzyMd7E2huCs8/dnqZJR27D9wAZAnYCs9JXRcU+TMjRLUuM72DHJfD13LSC5ICxsrTKg9YbJgZ2UzV56DtCBoM0P5q+NP25OTkdw1wFOalFHcMIvyTROq7PkC6CnkQNiNww/pLino5AtIxvRlc1ereg+ehGAoolqVeIj0441jTuKT5uVVxstSjbI/J0Baby3qaYsLVoIAnI33IDzjQ==)](https://codecov.io/gh/takahitomiyamoto/event-based-apex-logger)
 
 ![GitHub issues](https://img.shields.io/github/issues/takahitomiyamoto/event-based-apex-logger)
 ![GitHub forks](https://img.shields.io/github/forks/takahitomiyamoto/event-based-apex-logger)
